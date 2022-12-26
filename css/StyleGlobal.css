@@ -46,6 +46,7 @@ body {
 }
 
 header {
+    display: block;
     width: 100%;
 }
 
@@ -153,7 +154,114 @@ header {
 /* Inicio */
 
 .Inicio {
-    display: flex;
     width: 100%;
-    margin-bottom: 220px;
+    height: auto;
+}
+
+.info_photo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 12rem 0 5rem 0rem;
+}
+
+.photo_profile {
+    max-width: 65%;
+    width: 40%;
+}
+
+.info_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home_1 {
+    font-family: 'Nickname';
+    color: white;
+    font-size: 2rem;
+}
+
+.home_2 {
+    font-family: 'Nickname';
+    color: white;
+    font-size: 2rem;
+}
+
+.home_3 {
+    font-family: 'PantonRustScrSmBold';
+    color: white;
+    width: 28.2ch;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+
+
+@media  screen and (min-width: 800px) {
+    .Inicio {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 4rem;
+        height: 100vh;
+    }
+
+    .info_photo {
+        width: 55%;
+        padding-right: 4rem;
+    }
+
+    .photo_profile {
+        object-fit: contain;
+        max-width: 50rem;
+    }
+
+    .info_text {
+        width: 40%;
+        padding-left: 6rem;
+    }
+
+    .container_text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        letter-spacing: .2rem;
+        text-align: start;
+        margin-top: 6rem;
+    }
+
+    .home_1 {
+        font-size: 35px;
+        margin-left: 0.4rem;
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+
+    .home_2 {
+        font-size: 45px;
+        margin-left: 0.4rem;
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+
+    .home_3 {
+        display: block;
+        font-size: 29px;
+        width: 28.2ch;
+        font-weight: bold;
+        white-space: nowrap;
+        border-right: 1px solid;
+        animation: typing 8s steps(58) alternate infinite;
+        overflow: hidden;
+
+    }
+
+    @keyframes typing {
+        to{
+            width: 0%;
+        }
+    }
 }
