@@ -109,6 +109,10 @@ header {
         position: fixed;
     }
 
+    .icon-menu:before {
+        content: "\e9bd";
+     }
+    
     .navegator nav {
         width: 60%;
         height: 100%;
@@ -130,12 +134,12 @@ header {
 
     .menu_bar .bt-menu {
         display: block;
-        padding: 20px;
+        margin: 15px;
         color: #F9F1E6;
         text-decoration: none;
         font-family: 'HMT';
         font-weight: lighter;
-        font-size: 20px;
+        font-size: 25px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -152,41 +156,4 @@ header {
     display: flex;
     width: 100%;
     margin-bottom: 220px;
-}
-
-.description .pst-text-1 {
-    margin-top: 300px;
-    margin-left: 260px;
-    font-family: 'SweetTalk';
-    font-size: 60px;
-    color: white;
-}
-
-.description .pst-text-2 {
-    font-family: 'Nickname';
-    font-size: 54px;
-    padding: 10px 0;
-    margin-left: 260px;
-    color: white;
-}
-
-.description .textAnimation {
-    display: block;
-    font-family: 'PantonRustScrSmBold';
-    color: white;
-    font-size: 25px;
-    padding: 10px 0;
-    margin-left: 260px;
-    white-space: nowrap;
-    border-right: 1px solid;
-    width: 29ch;
-
-    animation: typing 6s steps(60) alternate infinite;
-    overflow: hidden;
-}
-
-@keyframes typing {
-    from { 
-        width: 0%;
-    }
 }

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('https://i.icomoon.io/public/temp/1ceb814aff/UntitledProject/icomoon.eot?nb749f');
+    src:  url('https://i.icomoon.io/public/temp/1ceb814aff/UntitledProject/icomoon.eot?nb749f#iefix') format('embedded-opentype'),
+      url('https://i.icomoon.io/public/temp/1ceb814aff/UntitledProject/icomoon.ttf?nb749f') format('truetype'),
+      url('https://i.icomoon.io/public/temp/1ceb814aff/UntitledProject/icomoon.woff?nb749f') format('woff'),
+      url('https://i.icomoon.io/public/temp/1ceb814aff/UntitledProject/icomoon.svg?nb749f#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
