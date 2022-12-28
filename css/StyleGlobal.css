@@ -28,6 +28,11 @@
     src: url('../fonts/SweetlyScented.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Odin_Rounded';
+    src: url('../fonts/Odin_Rounded.woff') format('woff');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
