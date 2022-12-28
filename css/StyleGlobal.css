@@ -269,7 +269,7 @@ header {
 /* SobreMi */
 
 .SobreMi {
-    background-color: #17264d;
+    background-color: #7b8afd;
     width: 100%;
     height: auto;
 }
@@ -278,6 +278,21 @@ header {
     color: white;
     font-family: 'HMT';
     text-align: center;
+}
+
+.sobreMi_container{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem 3rem 3rem;
+}
+
+.sobreMi_container span {
+    color: white;
+    font-size: 18px;
+    font-size: 'SweetTalk';
+    letter-spacing: .1rem;
+    line-height: 1.8rem;
+    text-align: justify;
 }
 
 @media screen and (min-width: 800px) {
@@ -293,5 +308,22 @@ header {
         text-align: center;
     }
 
+    .sobreMi_text {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .sobreMi_container{
+        width: 70%;
+        padding: 0 5% 0 3rem;
+    }
+
+    .sobreMi_container span {
+        text-align: start;
+        font-size: 20px;
+        letter-spacing: .2rem;
+        line-height: 2rem;
+    }
 }
 
