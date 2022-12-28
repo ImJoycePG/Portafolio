@@ -191,14 +191,22 @@ header {
 }
 
 .home_3 {
+    display: block;
     font-family: 'PantonRustScrSmBold';
     color: white;
-    width: 28.2ch;
-    font-size: 2rem;
+    font-size: 22px;
+    width: 36ch;
     white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 6s steps(56) alternate infinite;
+    overflow: hidden;
 }
 
-
+@keyframes typing {
+    to{
+        width: 0;
+    }
+}
 
 @media  screen and (min-width: 800px) {
     .Inicio {
@@ -235,33 +243,11 @@ header {
 
     .home_1 {
         font-size: 35px;
-        margin-left: 0.4rem;
         font-weight: bold;
-        margin-right: 1rem;
     }
 
     .home_2 {
         font-size: 45px;
-        margin-left: 0.4rem;
         font-weight: bold;
-        margin-right: 1rem;
-    }
-
-    .home_3 {
-        display: block;
-        font-size: 29px;
-        width: 28.2ch;
-        font-weight: bold;
-        white-space: nowrap;
-        border-right: 1px solid;
-        animation: typing 8s steps(58) alternate infinite;
-        overflow: hidden;
-
-    }
-
-    @keyframes typing {
-        to{
-            width: 0%;
-        }
     }
 }
