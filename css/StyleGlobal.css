@@ -169,6 +169,7 @@ header {
 .photo_profile {
     max-width: 65%;
     width: 40%;
+    height: auto;
 }
 
 .info_text {
@@ -191,7 +192,7 @@ header {
 }
 
 .home_3 {
-    display: block;
+    display: inline-block;
     font-family: 'PantonRustScrSmBold';
     color: white;
     font-size: 22px;
@@ -249,5 +250,9 @@ header {
     .home_2 {
         font-size: 45px;
         font-weight: bold;
+    }
+
+    .home_3 {
+        
     }
 }
