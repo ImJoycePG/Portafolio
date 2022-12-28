@@ -156,6 +156,7 @@ header {
 .Inicio {
     width: 100%;
     height: auto;
+    padding-bottom: 4rem;
 }
 
 .info_photo {
@@ -263,3 +264,34 @@ header {
         width: 36ch;
     }
 }
+
+
+/* SobreMi */
+
+.SobreMi {
+    background-color: #17264d;
+    width: 100%;
+    height: auto;
+}
+
+.SobreMi h1 {
+    color: white;
+    font-family: 'HMT';
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+
+    .SobreMi {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+        height: 100vh;
+    }
+
+    .SobreMi h1 {
+        text-align: center;
+    }
+
+}
+
