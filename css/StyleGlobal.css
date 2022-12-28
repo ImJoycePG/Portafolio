@@ -191,15 +191,21 @@ header {
     font-size: 2rem;
 }
 
-.home_3 {
-    display: inline-block;
+.animationText {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.animationText .home_3 {
     font-family: 'PantonRustScrSmBold';
     color: white;
-    font-size: 22px;
-    width: 36ch;
+    font-size: 18px;
+    width: 27ch;
     white-space: nowrap;
     border-right: 1px solid;
-    animation: typing 6s steps(56) alternate infinite;
+    animation: typing 6s steps(54) alternate infinite;
     overflow: hidden;
 }
 
@@ -253,6 +259,7 @@ header {
     }
 
     .home_3 {
-        
+        font-size: 22px;
+        width: 36ch;
     }
 }
