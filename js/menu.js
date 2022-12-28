@@ -17,4 +17,18 @@ function main() {
         }
     });
 
+    $('.navegator').click(function() {
+        if(contador == 1){
+            $('.navegator nav').animate({
+                left: '0'
+            });
+            contador = 0;
+        }else{
+            contador = 1;
+            $('.navegator nav').animate({
+                left: '-100%'
+            });
+        }
+    });
+
 }
