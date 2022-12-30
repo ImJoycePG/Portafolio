@@ -324,8 +324,8 @@ header {
 .sobreMi_photo {
     width: 55%;
     margin-bottom: 5rem;
+    border-radius: 50px;
 }
-
 
 @media screen and (min-width: 800px) {
 
@@ -365,6 +365,14 @@ header {
         margin-left: 100px;
     }
 
+    .sobreMi_photo {
+        border-radius: 100px;
+    }
+
+    .sobreMi_photo:hover {
+        border: 2px solid #F9B931;
+    }
+
     .sobreMi_title {
         text-align: flex-start;
         font-size: 34px;
@@ -372,3 +380,75 @@ header {
     }
 }
 
+
+/* Habilidades */
+
+.Habilidades {
+    background-color: #2F3130;
+    width: 100%;
+    height: auto;
+}
+
+.Habilidades h1 {
+    color: white;
+    font-family: 'HMT';
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.photos_abilities {
+    display: grid;
+    grid-template-columns: 13rem 13rem;
+    grid-template-rows: 12rem 12rem 12rem;
+    gap: 2px;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+
+.photos_abilities img {
+    width: 120px;
+    height: 140px;
+    margin: 0 auto;
+    background-color: #0C0C0C;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 1000ms;
+    filter: grayscale(100);
+}
+
+.photos_abilities img:hover {
+    border: 2px solid #F9B931;
+    transform: scale(1.14);
+    filter: grayscale(0);
+}
+
+@media screen and (min-width: 800px) {
+
+    .Habilidades {
+        height: 70vh;
+    }
+
+    .Habilidades h1 {
+        text-align: center;
+    }
+
+    .photos_abilities {
+        display: grid;
+        grid-template-columns: repeat(3, 18rem);
+        grid-template-rows: repeat(2, 18rem);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-content: center;
+    }
+
+    
+    .photos_abilities img {
+
+        width: 200px;
+        height: 220px;
+
+    }
+    
+}
