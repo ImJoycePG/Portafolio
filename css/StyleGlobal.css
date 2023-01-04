@@ -44,10 +44,13 @@ html {
     content: '';
 }
 
+html {
+    background-color: #ED9B40;
+}
+
 body {
     max-width: 100%;
     max-height: 100%;
-    background: #2F3130;
 }
 
 header {
@@ -67,10 +70,8 @@ header {
 }
 
 .navegator nav {
-    background-color: #2F3130;
+    background-color: #ED9B40;
     float: right;
-    max-width: 1000px;
-    margin: 20px auto;
 }
 
 
@@ -78,13 +79,14 @@ header {
     list-style: none;
     float: left;
     padding-left: 56px;
-    margin-top: 40px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .navegator nav ul li a {
     font-family: 'HMT';
     text-decoration: none;
-    color: #F9F1E6;
+    color: #FFEED8;
     font-weight: lighter;
     font-size: 20px;
     position: relative;
@@ -95,7 +97,7 @@ header {
     display: block;
     content: '';
     width: 0%;
-    background: #F9B931;
+    background: #BA3B46;
     height: 2px;
     top: 40px;
     position: absolute;
@@ -103,15 +105,16 @@ header {
 }
 
 .navegator nav ul li a:hover {
-    color: #F9B931;
+    color: #BA3B46;
 }
 
 .navegator nav ul li a:hover::before {
     width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     header {
+        background-color: #ED9B40;
         position: fixed;
     }
 
@@ -135,17 +138,17 @@ header {
     .menu_bar {
         display: block;
         width: 100%;
-        background: #2F3130;
+        height: 5vh;
     }
 
     .menu_bar .bt-menu {
         display: block;
-        margin: 15px;
-        color: #F9F1E6;
+        color: #FFEED8;
         text-decoration: none;
         font-family: 'HMT';
         font-weight: lighter;
         font-size: 25px;
+        margin: 10px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -187,13 +190,13 @@ header {
 
 .home_1 {
     font-family: 'Nickname';
-    color: white;
+    color: #FFEED8;
     font-size: 2rem;
 }
 
 .home_2 {
     font-family: 'Nickname';
-    color: white;
+    color: #FFEED8;
     font-size: 2rem;
 }
 
@@ -206,11 +209,12 @@ header {
 
 .animationText .home_3 {
     font-family: 'PantonRustScrSmBold';
-    color: white;
+    color: #FFEED8;
     font-size: 18px;
-    width: 27ch;
+    max-width: 29ch;
+    width: 36ch;
     white-space: nowrap;
-    border-right: 1px solid;
+    border-right: 2px solid;
     animation: typing 6s steps(54) alternate infinite;
     overflow: hidden;
 }
@@ -221,12 +225,12 @@ header {
     }
 }
 
-@media  screen and (min-width: 800px) {
+@media  screen and (min-width: 768px) {
     .Inicio {
         display: flex;
         flex-direction: row-reverse;
         padding-bottom: 4rem;
-        height: 100vh;
+        height: 93vh;
     }
 
     .info_photo {
@@ -266,189 +270,7 @@ header {
 
     .home_3 {
         font-size: 22px;
-        width: 36ch;
+        max-width: 36ch;
+        width: 29ch;
     }
-}
-
-
-/* SobreMi */
-
-.SobreMi {
-    background-color: #7b8afd;
-    width: 100%;
-    height: auto;
-}
-
-.SobreMi h1 {
-    color: white;
-    font-family: 'HMT';
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-.sobreMi_container{
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 3rem 3rem 3rem;
-}
-
-.sobreMi_container span {
-    color: white;
-    font-size: 18px;
-    font-family: Tahoma;
-    letter-spacing: .1rem;
-    line-height: 1.8rem;
-    text-align: center;
-}
-
-.sobreMi_title {
-    color: #F9B931;
-    text-align: center;
-    font-family: 'MilkyNice';
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: .1rem;
-    margin-bottom: 2rem;
-}
-
-
-.sobreMi_picture {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding: 1rem 0;
-}
-
-.sobreMi_photo {
-    width: 55%;
-    margin-bottom: 5rem;
-    border-radius: 50px;
-}
-
-@media screen and (min-width: 800px) {
-
-    .SobreMi {
-        display: flex;
-        flex-direction: column;
-        padding-top: rem;
-        height: 100vh;
-    }
-
-    .SobreMi h1 {
-        text-align: center;
-    }
-
-    .sobreMi_text {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .sobreMi_container{
-        width: 70%;
-    }
-
-    .sobreMi_container span {
-        font-size: 30px;
-        text-align: justify;
-        letter-spacing: .1rem;
-        line-height: 2rem;
-        padding: 0 5% 0 10rem;
-    }
-
-    .sobreMi_picture {
-        width: 45%;
-        height: auto;
-        margin-top: 2rem;
-        margin-left: 100px;
-    }
-
-    .sobreMi_photo {
-        border-radius: 100px;
-    }
-
-    .sobreMi_photo:hover {
-        border: 2px solid #F9B931;
-    }
-
-    .sobreMi_title {
-        text-align: flex-start;
-        font-size: 34px;
-        letter-spacing: .1rem;
-    }
-}
-
-
-/* Habilidades */
-
-.Habilidades {
-    background-color: #2F3130;
-    width: 100%;
-    height: auto;
-}
-
-.Habilidades h1 {
-    color: white;
-    font-family: 'HMT';
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-.photos_abilities {
-    display: grid;
-    grid-template-columns: 13rem 13rem;
-    grid-template-rows: 12rem 12rem 12rem;
-    gap: 2px;
-    justify-content: center;
-    padding-bottom: 3rem;
-}
-
-
-.photos_abilities img {
-    width: 120px;
-    height: 140px;
-    margin: 0 auto;
-    background-color: #0C0C0C;
-    padding: 20px;
-    border-radius: 16px;
-    transition: 1000ms;
-    filter: grayscale(100);
-}
-
-.photos_abilities img:hover {
-    border: 2px solid #F9B931;
-    transform: scale(1.14);
-    filter: grayscale(0);
-}
-
-@media screen and (min-width: 800px) {
-
-    .Habilidades {
-        height: 70vh;
-    }
-
-    .Habilidades h1 {
-        text-align: center;
-    }
-
-    .photos_abilities {
-        display: grid;
-        grid-template-columns: repeat(3, 18rem);
-        grid-template-rows: repeat(2, 18rem);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        justify-content: center;
-    }
-
-    
-    .photos_abilities img {
-
-        width: 200px;
-        height: 220px;
-
-    }
-    
 }

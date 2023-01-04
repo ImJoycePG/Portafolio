@@ -1,16 +1,16 @@
 $(document).ready(main);
 
-var contador = 1;
+var contador = true;
 
 function main() {
     $('.menu_bar').click(function() {
-        if(contador == 1){
+        if(contador == true){
             $('.navegator nav').animate({
                 left: '0'
             });
-            contador = 0;
+            contador = false;
         }else{
-            contador = 1;
+            contador = true;
             $('.navegator nav').animate({
                 left: '-100%'
             });
@@ -18,13 +18,13 @@ function main() {
     });
 
     $('.navegator').click(function() {
-        if(contador == 1){
+        if(contador == true){
             $('.navegator nav').animate({
                 left: '0'
             });
-            contador = 0;
+            contador = false;
         }else{
-            contador = 1;
+            contador = true;
             $('.navegator nav').animate({
                 left: '-100%'
             });

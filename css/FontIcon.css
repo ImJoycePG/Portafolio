@@ -25,5 +25,6 @@
   }
   
   .icon-menu:before {
+    color: #FFEED8;
     content: "\e9bd";
   }
