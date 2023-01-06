@@ -360,6 +360,7 @@ header {
 
     .sobreMi_photo {
         border-radius: 100px;
+        box-shadow: 10ch;
     }
 
     .sobreMi_photo:hover {
